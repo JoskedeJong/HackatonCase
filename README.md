@@ -41,3 +41,5 @@ Planning:
 - dinner time tot 18.30. Wooh! - hier heb ik nog even een half uurtje aan vast geplakt
 - uren 5 en 6: mooi maken veranderende header, linkjes aan plaatjes koppelen, achtergronden toevoegen, eerste content invullen.
 - dit is tot 21.00.
+
+- voor de rest van de avond is het gedaan met hard werken, en ga ik onspannen wat pielen aan opmaak
