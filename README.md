@@ -18,7 +18,7 @@ Mijn plan:
 
 Uiteengesplitst:
 - inleiding 4e revolutie
-- consequenties van revoltie
+- consequenties van revolutie
 - wat kan jij doen? Zelfstudie!
 - bronnen
 - en dan? de toekomst.
@@ -35,6 +35,6 @@ Concreet: vorm
 
 Planning:
 - uren 1 en 2: doelstelling en inhoud content plannen, HTML + CSS structuur opzetten.
-o- dit is tot 15.30
+- dit is tot 15.30.
 - uren 3 en 4: JS voor navigatie-knoppen maken, functionaliteit link-plaatjes maken, JS voor veranderende achtergrond.
-o- dit is tot 17.45
+- dit is tot 17.45.
