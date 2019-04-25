@@ -1,6 +1,6 @@
 # HackatonCase
 Dit is de plek waar ik werk aan mijn hackaton case maak.
-(noot: stap-voor-stap tijdplanning onderdaan)
+<b>(noot: stap-voor-stap tijdplanning onderdaan)</b>
 
 gevraagd:
 - informeren over 4e revolutie
