@@ -38,3 +38,5 @@ Planning:
 - dit is tot 15.30.
 - uren 3 en 4: JS voor navigatie-knoppen maken, functionaliteit link-plaatjes maken, JS voor veranderende achtergrond.
 - dit is tot 17.45.
+- dinner time tot 18.30. Wooh!
+- uren 5 en 6: mooi maken veranderende header, linkjes aan plaatjes koppelen, achtergronden toevoegen, eerste content invullen.
