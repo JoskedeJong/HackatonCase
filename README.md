@@ -1,5 +1,6 @@
 # HackatonCase
 Dit is de plek waar ik werk aan mijn hackaton case maak.
+(noot: stap-voor-stap tijdplanning onderdaan)
 
 gevraagd:
 - informeren over 4e revolutie
@@ -17,7 +18,7 @@ Mijn plan:
 
 Uiteengesplitst:
 - inleiding 4e revolutie
-- consequenties van revoltie
+- consequenties van revolutie
 - wat kan jij doen? Zelfstudie!
 - bronnen
 - en dan? de toekomst.
@@ -30,3 +31,10 @@ Concreet: vorm
 - blok: bronnen
 - blok tekst: toekomst en afsluiting
 - footer bar met persoonlijke info & nieuwsbrief veld
+
+
+Planning:
+- uren 1 en 2: doelstelling en inhoud content plannen, HTML + CSS structuur opzetten.
+- dit is tot 15.30.
+- uren 3 en 4: JS voor navigatie-knoppen maken, functionaliteit link-plaatjes maken, JS voor veranderende achtergrond.
+- dit is tot 17.45.

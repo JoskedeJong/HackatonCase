@@ -12,17 +12,20 @@ body{
 
 .headerBlock{
     width: 100%;
-    height: 110px;
+    height: 300px;
     background-color: grey;
     z-index: 10;
-    display: static;
+}
+
+#headerBlock{
+    position: static;
 }
 
 .headerButton{
     display: inline-block;
     width: 15%;
     height: 20px;
-    margin: 30px 4.8% 10px 4.8%;
+    margin: 60px 4.8% 10px 4.8%;
     background-color: green;
     color: yellow;
     border-radius: 2px;
@@ -35,15 +38,27 @@ body{
     color: white;
 }
 
-.titleSpace{
+.titleBlock{
     text-align: center;
-    font-size: 40px;
+    font-size: 200%;
     color: lightgray;
     width: 100%;
     height: 50px;
     background-color: red;
     /* margin: 10px 0 0 0; */
 }
+
+.subTitleBlock{
+    display: inline-block;
+    width: 40%;
+    height: 150px;
+    margin: 10px 29% 0 30%;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(138, 58, 58);
+    /* background-color: rgb(82, 14, 14); */
+}
+
 
 /* ---------------------------------------------------- content -----------------------------------------------------*/
 
@@ -77,6 +92,13 @@ body{
     z-index: 5;
 }
 
+.contBlockBG{
+    width: 100%;
+    margin: -10px 0 0 0;
+    background-color:lightslategray;
+    z-index: 4;
+}
+
 .contentTitle{
     font-size: 200%;
     text-align: center;
@@ -94,7 +116,9 @@ body{
 
 .linkImage{
     width: 100%;
+    height: 30%;
     object-fit: contain;
+    padding: 5px;
 }
 
 /* ---------------------------------------------------- footer -----------------------------------------------------*/
@@ -134,23 +158,28 @@ body{
 
 <body>
 
-<div class=headerBlock>
-    <div class=titleSpace>
+<div class=headerBlock id=headerBlock>
+    <div class=titleBlock id=titleSpace>
         Dit is de Titel
     </div>
-    <div class=headerButton>
+
+    <div class=subTitleBlock id=titleSpace>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+    </div>
+
+    <div class=headerButton id=headerbutton onclick="scrollTo0()">
         button 1
     </div>
 
-    <div class=headerButton>
+    <div class=headerButton id=headerbutton onclick="scrollTo1()">
         button 2
     </div>
 
-    <div class=headerButton>
+    <div class=headerButton id=headerbutton onclick="scrollTo2()">
         button 3
     </div>
 
-    <div class=headerButton>
+    <div class=headerButton id=headerbutton onclick="scrollTo3()">
         button 4
     </div>
 </div>
@@ -179,30 +208,47 @@ body{
 
 <div class=contentDivider id=divider2></div>
 
-<div class=contentTitle>
-    Titel Blok 2
+<div class=contBlockBG>
+    <div class=contentTitle>
+        Titel Blok 2
+    </div>
+
+    <div class=contLeftBlock>
+            <img class=linkImage src="https://i.imgur.com/abYAlZr.jpg" alt="placeholder image 1"></img>
+    </div>
+
+    <div class=contRightBlock>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+    </div>
+
+    <div class=contLeftBlock>
+        <img class=linkImage src="https://i.imgur.com/kT0XFFQ.jpg?1" alt="placeholder image 1"></img>
+    </div>
+
+    <div class=contRightBlock>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+    </div>
+
+    <div class=contLeftBlock>
+        <img class=linkImage src="https://i.imgur.com/L1UHwVe.jpg" alt="placeholder image 1"></img>
+    </div>
+    
+    <div class=contRightBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+    </div>
+
+    <div class=contentDivider id=divider3></div>
 </div>
-
-<div class=contLeftBlock>
-        <img class=linkImage src="https://i.imgur.com/abYAlZr.jpg" alt="placeholder image 1"></img>
-</div>
-
-<div class=contRightBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
-</div>
-
-<div class=contLeftBlock>
-    <img class=linkImage src="https://i.imgur.com/kT0XFFQ.jpg?1" alt="placeholder image 1"></img>
-</div>
-
-<div class=contRightBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
-</div>
-
-<div class=contentDivider id=divider3></div>
-
 <div class=contentTitle>
         Titel Blok 3
+</div>
+
+<div class=contentBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+</div>
+
+<div class=contentBlock>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 </div>
 
 <div class=contentBlock>
@@ -218,6 +264,53 @@ body{
 
     <div class=rightFootBlock></div>
 </div>
+
+<script>
+
+/* ---------------------------------------------------- navigation buttons -----------------------------------------------------*/
+
+var divider1 = document.getElementById("divider1");
+var divider2 = document.getElementById("divider2");
+var divider3 = document.getElementById("divider3");
+
+function scrollTo1(){
+    divider1.scrollIntoView(true);
+}
+
+function scrollTo2(){
+    divider2.scrollIntoView(true);
+}
+
+function scrollTo3(){
+    divider3.scrollIntoView(true);
+}
+
+/* ---------------------------------------------------- header alteration -----------------------------------------------------*/
+
+window.onscroll = function() {changeHead()};
+
+function changeHead(){
+    // var scrolledYN = document.body.scrollTop || document.getElement.scrollTop;
+    // var scrollHeight = document.docuemntElement.scrollHeight - document.docuemntElement.clientHeight;
+    // var scrolledPX = (scrolledYN / scrollHeight) * 100;
+    if (document.body.scrollTop > 210) {
+        document.getElementById("headerBlock").style.position = "fixed";
+        document.getElementById("headerBlock").style.height = "60px";
+        document.getElementById("titleSpace").style.display = "none";
+        document.getElementById("headerbutton").style.margin = "margin: 30px 4.8% 10px 4.8%";
+    }
+    else {
+        document.getElementById("headerBlock").style.position = "static";
+        document.getElementById("headerBlock").style.height = "300px";
+        document.getElementById("titleSpace").style.display = "block";
+        document.getElementById("headerbutton").style.margin = "margin: 60px 4.8% 10px 4.8%";
+         }
+    }  
+
+
+
+
+</script>
 
 
 </body>
