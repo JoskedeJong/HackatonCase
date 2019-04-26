@@ -1,15 +1,13 @@
 <HTML>
 
 <head>
-    
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Programmeren - Sta sterk in de 4e revolutie</title>
 
 <style>
 
 body{
-    /* font: font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
     margin: 0;
     background: url(https://i.imgur.com/8Wn5xjg.jpg) no-repeat center fixed;
     background-size: cover;
@@ -44,10 +42,11 @@ body{
     width: 40%;
     height: 400px;
     margin: 10px 29% 0 30%;
-    text-align: center;
-    font-size: 180%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 160%;
+    font-family: Helvetica;
     color: rgb(247, 241, 241);
-    /* background-color: rgb(82, 14, 14); */
 }
 
 .headerButton{
@@ -71,13 +70,6 @@ body{
     color: red;
 }
 
-/* .headerImg{
-    position: absolute;
-    left: 75%;
-    top: 60%;
-    height: 300px
-} */
-
 .fillerBlock{                               /*made to fill space when header goes from in-line to fixed*/
     display: none;
     position: static;
@@ -89,6 +81,10 @@ body{
 
 /* ---------------------------------------------------- content -----------------------------------------------------*/
 
+.fillerBlock2{
+    height: 15%;
+}
+
 .contentBlock{
     display: inline-block;
     width: 40%;
@@ -97,8 +93,24 @@ body{
     background-color: rgb(226, 250, 240);
     border: 1px solid rgb(27, 131, 89);
     border-radius: 3px;
+    font-family: Helvetica;
     font-size: 120%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.3;
     z-index: 5;
+}
+
+.contentImgContainer{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentImg{
+    width: 300px;
+    float: center;
 }
 
 .contLeftBlock{
@@ -117,13 +129,15 @@ body{
     border-radius: 3px;
     padding: 15px;
     background-color:  rgb(130, 131, 129);
+    font-family: Helvetica;
     font-size: 120%;
+    text-align: left;
+    line-height: 1.3;
     z-index: 5;
 }
 
 .contBlockBG{
     width: 100%;
-    /* background-color: rgb(96, 97, 95); */
     background: url(https://i.imgur.com/uryV7qU.jpg) no-repeat center fixed;
     z-index: 4;
 }
@@ -213,10 +227,7 @@ body{
 }
 
 </style>
-
 </head>
-
-
 
 <body>
 
@@ -228,11 +239,12 @@ body{
 
     <div class=subTitleBlock id=titleSpace2>
             <br><br><br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in.  
-        <!-- <div>
-            <img class=headerImg src="https://i.imgur.com/DIqMeWb.png" alt"revolution hand"><img/></div>
-        </div> -->
-    
+            Het tijdperk van de robot is aangebroken. Voorspellingen stellen dat meer en meer werk in rap 
+            tempo overgenomen zal worden door robots. En dat is niet alleen maar je gazon die gemaaid wordt. 
+            Fysiek werk, kantoor werk, klantenservice... de robot kan het allemaal. Dit is het tijdperk van 
+            <b>de vierde insutriële revolutie</b>. <br> <br>
+            de vraag is: <br>
+            <b>Hoe overleef jij de toekomst?</b>
     </div>
         <div class=headerButton id=headerButton onclick="scrollToTop()">
             <b>DE 4E REVOLUTIE</b>
@@ -253,12 +265,24 @@ body{
 
 <div class=fillerBlock id=fillerBlock></div>
 
-<div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+<div class=fillerBlock2></div>
+
+<div class=contentImgContainer>
+    <img class=contentImg src="https://i.imgur.com/DIqMeWb.png" alt="revolution hand">
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+    Het Wereld Economisch forum <a href="http://www3.weforum.org/docs/WEF_Future_of_Jobs_2018.pdf">slaat de noodklok</a>. Tussen nu en 2022 zullen 75 miljoen banen 
+    verdwijnen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id 
+    odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et 
+    lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in.  
+</div>
+
+<div class=contentBlock>
+    Deze website is gemaakt jou te wapenen in de de vierde insutriële revolutie. Doel is om te helpen met de eerste stappen voor een degelijke overlevings-strategie. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar 
+    mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. 
+    Nam consectetur nibh sapien, id scelerisque libero lacinia in.  
 </div>
 
 <div class=contentDivider id=divider1></div>
@@ -268,11 +292,17 @@ body{
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        De voorzienbare toekomst vraagt om nieuwe kennis. Een maatschappij vol met robots ane technologie vraagt om kennis van robots en technologie. Natuurlijk hoeven we 
+        niet allemaal wetenschapper van de bovenste plank te worden, maar een klein beetje basiskennis kan je al snel kilometers voorsprong geven. Lorem ipsum dolor sit 
+        amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, 
+        facilisis volutpat lectus congue vel. 
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        Werken aan de toekomst is niet makkelijk als je nog druk bezig bent met je baan. Er zo even tussenuit voor een cursus of een stageplaats is een luxe die bijna 
+        niemand heeft. Gelukkig zijn er oplossingen: zelfstudies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus 
+        eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, 
+        id auctor orci dapibus.  
 </div>
 
 <!-- <div class=contentDivider id=divider2></div> -->
@@ -283,8 +313,12 @@ body{
     </div>
 
     <div class=contentBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
     </div>
+        Gelukkig zit het internet vol van bronnen die je op weg kunnen helpen. Om jou wat zoekwerk te besparen hebben we hier een overzichtelijk lijstje gemaakt 
+        van een aantal bronnen. Voor iedere bron is er een korte samenvatting, plust wat voor en nadelen van deze specifieke thuisstudie. Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, facilisis volutpat 
+        lectus congue vel.<br><br>
+        Klik op de plaatjes om naar de website te gaan.
 
     <div class=contLeftBlock>
             <a href="https://www.sololearn.com">
@@ -293,8 +327,11 @@ body{
     </div>
 
     <div class=contRightBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
     </div>
+        Sololearn.com<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.
+        Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius 
+        rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 
     <div class=contLeftBlock>
         <a href="https://www.CodeCademy.com">
@@ -303,8 +340,11 @@ body{
     </div>
 
     <div class=contRightBlock>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
     </div>
+        CodeCademy.com<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.
+        Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. 
+        Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 
     <div class=contLeftBlock>
         <a href="https://codeinstitute.net/">
@@ -313,30 +353,45 @@ body{
     </div>
     
     <div class=contRightBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        CodeInstitute.net<br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.
+        Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. 
+        Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
     </div>
 
     <div class=contentDivider id=divider3></div>
 </div>
+
 <div class=contentTitle>
         De Toekomst
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        Hoe pak je zo'n studie nu precies aan? Ons advies, zet doelen, en werk samen Maak bijvoorbeeld gebruik van Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. 
+        Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        Je hebt een studie af - wat nu? Allereerst: wees niet bang je niewe kennis te tonen. Zet het op je CV. Laat het je baas weten. Voor je het weet heb je Lorem ipsum 
+        dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius 
+        lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis.  
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        Naast gratis cursusen zijn er altijd nog meer opties. Je kan bijvoorbeeld denken aan Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat 
+        massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque 
+        molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 </div>
 
 <div class=contentBlock>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio pulvinar mollis. Integer lacinia eros quis laoreet ultrices. Praesent tempus ullamcorper ex, vel vehicula arcu scelerisque in. Phasellus tempus eros et lobortis varius. Nam consectetur nibh sapien, id scelerisque libero lacinia in. Sed ante diam, rutrum vel elit in, iaculis mollis elit. Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
+        De toekomst zit misschien vol met robots, maar dat betekent niet dat 'ie minder zonnig is. Er zijn veel positieve dingen die de vierde insutriële revolutie te bieden heeft. 
+        En met de kennis die je op kan doen in deze stuedies heb jij een grote stap voor om mee te liften omhoog. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Suspendisse sed erat massa. Sed egestas tellus eu pulvinar auctor. Phasellus in magna id odio p.Suspendisse varius lacus erat, facilisis volutpat lectus congue vel. 
+        Duis interdum neque molestie ante hendrerit, id auctor orci dapibus. Nulla varius rhoncus sagittis. Nam cursus justo ac interdum venenatis. 
 </div>
+
+<div class=fillerBlock2></div>
 
 <div class=footerBlock>
     <div class=leftFootBlock>
