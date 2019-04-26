@@ -55,9 +55,9 @@ body{
     width: 15%;
     height: 30px;
     margin: 0px 4.8% 10px 4.8%;
-    border: 1px solid rgb(37, 43, 49);
-    border-radius: 2px;
     padding-top: 10px;
+    border: 1px solid rgb(37, 43, 49);
+    border-radius: 4px;
     text-align: center;
     font-family: Helvetica;
     text-shadow: -1px -1px 0 rgb(82, 82, 82), 1px -1px 0 rgb(82, 82, 82), -1px 1px 0 rgb(82, 82, 82), 1px 1px 0 rgb(82, 82, 82);
@@ -166,7 +166,7 @@ body{
 .footerBlock{
     display: inline-block;
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: rgb(52, 53, 52);
     z-index: 10;
     margin: 10px 0 0 0;
@@ -179,7 +179,13 @@ body{
     height: 80px;
     background-color: rgb(96, 97, 95);
     margin: 10px 0% 10px 5%;
-    padding: 2px;
+    padding: 10px 0 0 10px;
+    border: 1px solid rgb(69, 70, 68);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    text-shadow: -1px -1px 0 rgb(82, 82, 82), 1px -1px 0 rgb(82, 82, 82), -1px 1px 0 rgb(82, 82, 82), 1px 1px 0 rgb(82, 82, 82);
+    color: rgb(45, 46, 45);
     z-index: 15;
 }
 
@@ -189,13 +195,19 @@ body{
     height: 80px;
     background-color: rgb(96, 97, 95);
     margin: 10px 5% 10px 0;
+    padding: 10px 0 0 10px;
+    border: 1px solid rgb(69, 70, 68);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    line-height: 1.1;
     z-index: 15;
 }
 
 .socialImg{
     width: 20px;
     height: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(45, 46, 45);
     margin: 2px;
     border-radius: 2px;
 }
@@ -307,7 +319,7 @@ body{
     <div class=contentDivider id=divider3></div>
 </div>
 <div class=contentTitle>
-        De Toekomst!
+        De Toekomst
 </div>
 
 <div class=contentBlock>
@@ -338,7 +350,11 @@ body{
     </div>
     <div class=rightFootBlock>
         Join the Revolution en abbonneer je <br>
-        op de Nieuwsbrief van het front<br>
+        op de Nieuwsbrief van het front<br> <br>
+        <form>
+            <input type="email" placeholder="e-mail" name="emailSub" required>
+            <input type="submit" value="verstuur" action="/mail_handling_part" method="post">
+        </form>
     </div>
 </div>
 
@@ -357,14 +373,17 @@ function scrollToTop(){
 
 function scrollTo1(){
     divider1.scrollIntoView(true);
+    window.scrollBy(0, -90);                    /*correctie voor fixed header*/
 }
 
 function scrollTo2(){
     divider2.scrollIntoView(true);
+    window.scrollBy(0, -90);                    /*correctie voor fixed header*/
 }
 
 function scrollTo3(){
     divider3.scrollIntoView(true);
+    window.scrollBy(0, -90);                    /*correctie voor fixed header*/
 }
 
 /* ---------------------------------------------------- header alteration -----------------------------------------------------*/
@@ -372,7 +391,7 @@ function scrollTo3(){
 window.onscroll = function() {changeHead()};
 
 function changeHead(){
-    if (document.body.scrollTop > 610) {
+    if (document.body.scrollTop > 610) {                                            /*functie maakt header fixed als meer dan 610px gescrolled is*/
         document.getElementById("headerBlock").style.position = "fixed";
         document.getElementById("headerBlock").style.height = "90px";
         document.getElementById("titleSpace").style.display = "none";
@@ -380,7 +399,7 @@ function changeHead(){
         document.getElementById("headerButton").style.marginTop = "30px";
         document.getElementById("fillerBlock").style.display = "inline-block";
     }
-    else {
+    else {                                                                          /*functie maakt header static als minder dan 610px gescrolled is*/
         document.getElementById("headerBlock").style.position = "static";
         document.getElementById("headerBlock").style.height = "710px";
         document.getElementById("titleSpace").style.display = "inline-block";
