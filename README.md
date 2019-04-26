@@ -43,3 +43,10 @@ Planning:
 - dit is tot 21.00.
 
 - voor de rest van de avond is het gedaan met hard werken, en ga ik onspannen wat pielen aan opmaak
+
+Dag 2, planning:
+- 11.15 tot 11.30: updaten planning, core code updaten met werk van gisteren
+- 11.30 tot 13.30: oplossing voor scrollIntoView + fixed header implementeren, email-vakje implementeren.
+- 14.00 tot 16.00: inhoud maken, finishing touches + opruimen code.  
+
+
